@@ -8,7 +8,7 @@ const collectionname = 'placesappcollection'
 
 const saveData = (newData) => {
   return new Promise((resolve, reject) => {
-    MongoClient.connect(databaseb, {useNewUrlParser: true}, (err, client) => {
+    MongoClient.connect(database, {useNewUrlParser: true}, (err, client) => {
       if (err) {
         reject('Unable to connect to MongoDB');
       }
