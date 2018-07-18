@@ -1,8 +1,8 @@
 const {MongoClient} = require('mongodb');
 const fs = MongoClient;
 
-const db = 'mongodb://localhost:27017';
-//const database = 'mongodb://samcar123:samcar123@ds239931.mlab.com:39931/sam_car';
+//const db = 'mongodb://localhost:27017';
+const database = 'mongodb://samcar123:samcar123@ds239931.mlab.com:39931/sam_car';
 const appname = 'car';
 const collectionname = 'placesappcollection'
 
