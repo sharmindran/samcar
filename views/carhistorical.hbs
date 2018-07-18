@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Places Search Historical</title>
+  {{> stylerefs}}
+</head>
+<body>
+
+{{> navbar}}
+
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>Places Searched Historical</b></h1>
+  <p>Welcome to this page for searched records of places historical</p>
+</header>
+
+<div class="container">
+  <form action="/" method="post">
+    <button class="btn btn-primary btn-lg" type="submit" formaction="/cardelete">Delete All Records</button>
+  </form>
+  <br></br>
+  <table class="table table-striped">
+    {{#list items}}<tr><td>{{name}}</td><td>{{address}}</td><td><img src={{photo_reference}} width="200" height="200"></td></tr>{{/list}}
+  </table>
+</div>
+
+{{> footer}}
+
+</body>
+</html>

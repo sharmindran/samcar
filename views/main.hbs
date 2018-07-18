@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  {{> stylerefs}}
+</head>
+<body>
+
+{{> navbar}}
+
+<header class="w3-display-container w3-center w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img src="./mainlambo.jpg" width="1200" height="500">
+
+</header>
+
+<div class="w3-content" style="max-width:1100px">
+
+<div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">What Your Ride Wants?</h1>
+      <br>
+      <p class="w3-large">Search away your car needs with a simple click of a button!</p>
+      <p class="w3-large">Every Car have it's needs!</p>
+      <form action ="/carform" method="post">
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="submit" formaction="/carform">Lets Go!</button>
+      </form>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="./mainlambo2.jpg" class="w3-image" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+{{> footer}}
+
+</body>
+</html>
